@@ -79,7 +79,7 @@ public class S1Q2 extends JFrame implements ActionListener {
 
         try {
             Class.forName("org.postgresql.Driver");
-            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/ty92", "ty92", "ty92");
+            Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/ty", "ty92", "ty92");
             PreparedStatement ps = con.prepareStatement("INSERT INTO Employee (ENO, ENAME, DESIGNATION, SALARY) VALUES (?, ?, ?, ?)");
 
             ps.setInt(1, eno);
